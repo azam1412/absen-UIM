@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainJadwal1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameUsername"
+        android:layout_width="174dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Hallo Muda Mulia"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="41dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameUsername"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_username" />
+
+    <TextView
+        android:id="@+id/textJadwal"
+        android:layout_width="164dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="48dp"
+        android:text="Jadwal Hari Ini"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        app:layout_constraintStart_toStartOf="@+id/nameUsername"
+        app:layout_constraintTop_toBottomOf="@+id/nameUsername" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayoutJadwal1"
+        android:layout_width="380dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="8dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:startIconDrawable="@drawable/ic_username"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/textJadwal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jadwal Pelajaran 1" android:layout_gravity="center_horizontal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayoutJadwal2"
+        android:layout_width="0dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="32dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:startIconDrawable="@drawable/ic_username"
+        app:layout_constraintEnd_toEndOf="@+id/textLayoutJadwal1"
+        app:layout_constraintStart_toStartOf="@+id/textLayoutJadwal1"
+        app:layout_constraintTop_toBottomOf="@+id/textLayoutJadwal1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jadwal Pelajaran 2" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayoutJadwal3"
+        android:layout_width="0dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="32dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:startIconDrawable="@drawable/ic_username"
+        app:layout_constraintEnd_toEndOf="@+id/textLayoutJadwal2"
+        app:layout_constraintStart_toStartOf="@+id/textLayoutJadwal2"
+        app:layout_constraintTop_toBottomOf="@+id/textLayoutJadwal2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jadwal Pelajaran 3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
